@@ -13,6 +13,7 @@
 .div-flex{
     display: flex;
     overflow: hidden;
+    padding: 0 0 10px 0;
 }
 .descubre-content{
     max-width: 1200px;

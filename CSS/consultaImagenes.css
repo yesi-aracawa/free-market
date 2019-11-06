@@ -1,0 +1,15 @@
+body{
+    overflow-x: hidden;
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    background-color: lightgray;
+}
+.resultado-section{
+    margin-bottom: 35px;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+    max-width: 900px;
+    padding-top: 12px;
+}
