@@ -1,5 +1,5 @@
-.select-coleccion{
-    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+.select-coleccion {
+    font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
     background: transparent;
     border: none;
     height: 40px;
@@ -9,14 +9,22 @@
     font-size: 26px;
     font-weight: bold;
     border-radius: 4px;
-    
 }
-.option-coleccion{
+
+.colecciones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+.option-coleccion {
     font-size: 17px;
     box-sizing: border-box;
     border-color: #e6e6e6;
 }
-.main-colect{
+
+.main-colect {
     display: flex;
     width: 383px;
     background-size: contain;
@@ -26,14 +34,15 @@
     flex-direction: column;
     height: 100%;
 }
-.card-colect.large-colect{
+
+.card-colect.large-colect {
     width: 383px;
     height: 100%;
     margin: 0;
     display: block;
     color: #333;
     border-radius: 4px;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
     text-decoration: none;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
@@ -42,12 +51,14 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.lazyload{
+
+.lazyload {
     background: #fff;
     height: 281px;
     width: 383px;
 }
-.card-colect.foot-main{
+
+.card-colect .foot-main {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -64,14 +75,16 @@
     border-top-right-radius: 0;
     box-shadow: none;
 }
-.menu-item-label{
+
+.menu-label {
     color: #4b4b4b;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.main-colect .menu-item-title{
+
+.menu-title {
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
@@ -79,3 +92,182 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+.otros-div {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0 0 8px;
+}
+
+.cuadro-item {
+    background-color: #fff;
+    border-radius: 4px;
+    display: block;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+    width: 184px;
+    height: 184px;
+    margin: auto;
+}
+
+.site-shopping-info {
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.content-seccion-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.info-slide {
+    float: left;
+    width: 33.33333%;
+    box-sizing: border-box;
+    padding: 35px 45px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.img-content-info {
+    height: 55px;
+}
+
+.h1-info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #4b4b4b;
+    margin: 16px 0 0;
+}
+
+.p-info {
+    color: #999;
+    font-size: 15px;
+    margin: 4px 0 10px;
+    line-height: 1.2;
+}
+
+.a-info {
+    color: #3483fa;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.info-slide:nth-child(2)::before {
+    left: 0;
+    background-color: #e2e2e2;
+    content: "";
+    display: block;
+    margin-top: -32.5px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+}
+
+.info-slide:nth-child(2)::after {
+    right: 0;
+    background-color: #e2e2e2;
+    content: "";
+    display: block;
+    margin-top: -32.5px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+}
+
+.nav-footer {
+    display: block;
+    border-color: #e6e6e6;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #999;
+    width: 100%;
+    padding: 16px 10px;
+    max-height: 73px;
+}
+
+.nav-info-footer {
+    padding: 0;
+    width: 76.5%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nav-info-footer-primary {
+    vertical-align: top;
+    position: relative;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    padding-top: 0;
+    font-size: 0;
+    margin: 0 0 25px;
+    overflow: hidden;
+}
+
+.nav-footer-copy {
+    font-size: 12px;
+    width: auto;
+    color: #999;
+    vertical-align: initial;
+    line-height: initial;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.letras-a {
+    padding: 0 15px 0 0;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-footerInfo {
+    display: inline-block;
+    font-size: 13px;
+    color: #333;
+}
+
+.download-app {
+    text-align: right;
+    width: 23%;
+    min-width: 278px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 0 0 400px;
+}
+
+.back-color {
+    border-radius: 4px;
+    background-color: #ffe600;
+    border: 1px solid #d9cd4b;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 8px;
+    color: #333;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-app {
+    vertical-align: top;
+    background: url(../IMAGES/phone.png);
+    width: 15px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 9px;
+    position: relative;
+    top: 5px;
+}
+
