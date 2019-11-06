@@ -1,0 +1,161 @@
+.inside-form{
+    border-radius: 4px;
+    background: #fff;
+    padding: 26px 32px 22px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.35;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    margin: 0px 0px 0px 300px;
+    width: 685px;
+}
+.form-producto{
+    margin-top: 3px;
+    vertical-align: top;
+    width: 256px;
+    display: inline-block;
+    margin: 10px 40px;
+    padding: 21px 0 0;
+    text-align: left;
+    position: relative;
+}
+.form-producto-input{
+    padding-left: 0;
+    padding-bottom: 5px;
+    background: hsla(0,0%,100%,0);
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    width: 100%;
+    outline: 0;
+}
+.condicion{
+    width: calc(100% - 124px);
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 50px 60px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    overflow: visible;
+}
+.title-condicion{
+    padding: 24px;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+.values-condicion{
+    width: 100%;
+    margin: 0;
+    max-height: 340px;
+}
+.menu-condicion{
+    max-height: 416px;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    display: contents;
+}
+.menu-condicion-item:first-child{
+    border-top: .0625em solid #e6e6e6;
+}
+.menu-condicion-item{
+    font-size: 16px;
+    padding: 15px 24px;
+    width: auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 512px;
+}
+.condicion-item{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 580px;
+    color: rgba(0,0,0,.8);
+    font-size: 16px;
+}
+.radio-btn{
+    margin-left: 50%;
+}
+.foto-product{
+    width: calc(100% - 124px);
+    border: 1px solid #e7e7e7;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 60px 20px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    overflow: visible;
+}
+.foto-agregar-product{
+    width: auto;
+    padding: 0;
+    margin-bottom: 60px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px dashed #3483fa;
+    border-radius: 3px;
+    width: inherit;
+}
+.btn-foto-product{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 21px 0;
+    box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-elegir-foto{
+    font-size: 14px;
+    line-height: 1px;
+    width: 96px;
+    height: 36px;
+    border-color: #3483fa;
+    color: #fff;
+    border: .05556em solid;
+    cursor: pointer;
+}
+.btn-enviar-formulario{
+    font-size: 14px;
+    line-height: 1px;
+    width: 96px;
+    height: 36px;
+    border-color: #3483fa;
+    background-color: #3483fa;
+    color: #fff;
+    border: .05556em solid;
+    cursor: pointer;
+    margin-left: 530px;
+}
+
+
