@@ -209,7 +209,9 @@
         <div class="div-flex">
             <form enctype="multipart/form-data" method="POST" action="../PHP/back.php">
                 <div class="inside-form">
-                    <input class="form-producto-input" type="text" name="nombre" id="" placeholder="Nombre" required>
+                    <div class="form-producto">
+                        <input class="form-producto-input" type="text" name="nombre" id="" placeholder="Nombre del producto" required>
+                    </div>
                     <div class="form-producto">
                         <input class="form-producto-input" type="text" name="marca" id="" placeholder="Marca" required>
                     </div>
@@ -246,10 +248,16 @@
                                 </li>
 
                             </ul>
+                            <div class="form-producto">
+                                <input class="form-producto-input" type="number" name="cantidad" id=""
+                                    placeholder="Cantidad" required>
+                            </div>
+                            <div class="form-producto">
+                                <input class="form-producto-input" type="number" name="precio" id=""
+                                    placeholder="Precio en pesos" required>
+                            </div>
                         </div>
                     </div>
-                    Cantidad:<input type="number" name="cantidad" required>
-                    Precio:<input type="number" name="precio" required>
                     <input class="btn-enviar-formulario" type="submit" value="Confirmar">
                 </div>
             </form>
@@ -292,6 +300,23 @@
                 </a>
             </div>
         </div>
+        <div class="div-flex">
+            <!-- <form enctype="multipart/form-data" action="uploader.php" method="POST"> -->
+            <form>
+                <div class="inside-form">
+                    <div class="foto-product">
+                        <h3 class="title-condicion">Cambiar datos</h3>
+                        <div class="values-condicion">
+                            <div class="form-producto">
+                                <input class="form-producto-input" type="number" name="cantidad" id=""
+                                    placeholder="Cantidad">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn-enviar-formulario" type="submit" value="Confirmar">
+                </div>
+            </form>
+        </div>
     </section>
 
     <section class="descubre">
@@ -312,47 +337,113 @@
                                 src="https://http2.mlstatic.com/resources/deals/exhibitors_resources/mlm-home-desktop-collections-picture-d68c7463-b8ad-4750-805f-d2f9c3818489.jpg"
                                 alt="">
                             <div class="card-colect foot-main">
-                                <span class="main-item-label">DESCUBRE</span>
-                                <span class="main-item-title">SUSTENTABLE</span>
+                                <span class="main-label">DESCUBRE</span>
+                                <span class="main-title">SUSTENTABLE</span>
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="div-flex">
-            <div class="descubre-body">
-                <a href="index.html" class="adv-body">
-                    <div class="adv-info">
-                        <span class="adv-info-titulo">PUBLICA GRATIS</span>
-                        <span class="adv-info-text adv-info-text-bold">VENDE O RENTA</span>
-                        <span class="adv-info-text adv-info-text-bold">TU INMUEBLE</span>
-                        <button class="andes-button-filed">Ver más</button>
-                    </div>
-                    <div>
-                        <img class="adv-img"
-                            src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mlm-home-desktop-discovery-picture-93234c5b-8d1e-4f8f-907c-4e3f5135cf00.jpg"
-                            alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="descubre-body-juguetes">
-                <a href="index.html" class="adv-body">
-                    <div class="adv-info">
-                        <span class="adv-info-titulo">JUGUETERIA</span>
-                        <span class="adv-info-text adv-info-text-bold">LOS MEJORES</span>
-                        <span class="adv-info-text adv-info-text-bold">JUGUETES</span>
-                        <button class="andes-button-filed">Ver más</button>
-                    </div>
-                    <div>
-                        <img class="adv-img"
-                            src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mlm-home-desktop-discovery-picture-d97db074-51cc-49f4-97ec-1f51ef3b7833.jpg"
-                            alt="">
-                    </div>
-                </a>
+                <div class="otros-div">
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_652678-MLM32172855025_092019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_609830-MLM31215304669_062019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_700485-MLM31214437861_062019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_784774-MLM32544262035_102019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_952050-MLM31237807098_062019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_757680-MLM31229303961_062019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_612232-MLM31907685521_082019-AC.jpg" alt="">
+                    </a>
+                    <a href=# class="cuadro-item">
+                        <img class="cuadro-item"
+                            src="https://http2.mlstatic.com/D_Q_NP_824103-MLM31991898150_082019-AC.jpg" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+    <section class="site-shopping-info">
+        <div class="content-seccion-info">
+            <div class="info-slide">
+                <div class="img-content-info">
+                    <img src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/ecosystem/payment.svg"
+                        alt="" class="img-content-info">
+                </div>
+                <span class="h1-info">Paga con tarjeta o en efectivo</span>
+                <p class="p-info">
+                    <span>Con Mercado Pago, tienes meses sin intereses con tarjeta o efectivo en puntos de pago. ¡Y
+                        siempre es seguro!</span>
+                </p>
+                <a class="a-info" href=#>Cómo pagar con Mercado Pago</a>
+            </div>
+            <div class="info-slide">
+                <div class="img-content-info">
+                    <img src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/ecosystem/shipping.svg"
+                        alt="" class="img-content-info">
+                </div>
+                <span class="h1-info">Envío gratis desde $ 499</span>
+                <p class="p-info">
+                    <span>Con solo estar registrado en Mercado Libre, tienes envíos gratis en millones de productos
+                        seleccionados.</span>
+                </p>
+                <a class="a-info" href=#>Conoce más sobre este beneficio</a>
+            </div>
+            <div class="info-slide">
+                <div class="img-content-info">
+                    <img src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/ecosystem/protected.svg"
+                        alt="" class="img-content-info">
+                </div>
+                <span class="h1-info">Seguridad, de principio a fin</span>
+                <p class="p-info">
+                    <span>¿No te gusta? ¡Devuélvelo! En Mercado Libre, no hay nada que no puedas hacer, porque estás
+                        siempre protegido.
+                    </span>
+                </p>
+                <a class="a-info" href=#>Cómo te protegemos</a>
+            </div>
+        </div>
+    </section>
+    <footer class="nav-footer">
+        <div class="nav-info nav-bounds">
+            <div class="nav-info-footer">
+                <div class="nav-info-footer-primary">
+                    <nav class="nav-footerInfo">
+                        <a class="letras-a" href=#>Trabaja con nosotros</a>
+                        <a class="letras-a" href=#>Términos y condiciones</a>
+                        <a class="letras-a" href=#>Políticas de privacidad</a>
+                        <a class="letras-a" href=#>Ayuda</a>
+                    </nav>
+                    <br>
+                    <small class="nav-footer-copy">Copyright © 1999-2019 DeRemate.com de México S. de R.L. de
+                        C.V.</small>
+                </div>
+            </div>
+            <div class="download-app">
+                <a href=# class="back-color">
+                    <i class="icon-app"></i>
+                    <span> ¡Descarga gratis la app de Mercado Libre!</span>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
