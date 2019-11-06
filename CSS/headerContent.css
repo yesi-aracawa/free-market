@@ -8,6 +8,9 @@
     padding: 11px 0px 0px;
     font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     color: #333;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
 }
 
 .nav-bounds {
@@ -23,7 +26,6 @@
     top: 11px;
     width: 140px;
     background-repeat: no-repeat;
-    cursor: pointer;
     border: 0;
     margin-right: 20px;
 }
@@ -78,8 +80,9 @@
 .nav-menu {
     display: inline-flex;
     margin: 0 0 0 80px;
-    max-width: 10024px;
+    max-width: 1024px;
 }
+
 
 .nav-menu-list {
     list-style: none;
@@ -88,6 +91,9 @@
     display: inline-flex;
 }
 
+.nav-img-shop {
+    position: inherit;
+}
 .nav-img-loc {
     position: absolute;
 }
@@ -134,6 +140,17 @@
     color: #333;
     padding-left: 28px;
     padding-right: 3px;
+    font-size: 14px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.nav-menu-link-cp-cuenta{
+    line-height: 13px;
+    height: 32px;
+    color: #333;
     font-size: 14px;
     width: 100%;
     white-space: nowrap;
@@ -198,14 +215,128 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 .nav-header-menu{
     padding: 20px;
+    position: absolute;
 }
-.nav-cuenta{
-    position: fixed;
+.section-img{
+    padding: 100px 0px 0px;
+    width: 1349px;
+    height: 100%;
+    margin: 0px 0px 0px -8px;
+    position: inherit;
+    overflow: hidden;
 }
-.nav-cuenta1{
-    position: fixed;
+.div-content{
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    max-width: 1366px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: -10px -10px;
+    padding: 30px 0;
+    background-color: lightgray;
+    overflow: hidden;
 }
-.nav-cuenta2{
-    position: fixed;
+.div-pago-info{
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90px;
+    margin: 0 auto;
+    max-width: 1180px;
+    overflow: hidden;
+}
+.pago-data-grupo {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.pago-data-section{
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    font-size: 18px;
+    padding: 20px;
+    white-space: nowrap;
+    height: 90px;
+} 
+.pago-data-section-leading{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #333;
+    position: relative;
+    padding-left: 32px;
+}
+.pago-data-section-leading::before{
+    background-color: #3483fa;
+    bottom: 4px;
+    content: "";
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 4px;
+}
+.pago-data-grupo-leading{
+    border-right-width: 1px;
+    border-right-color: #999;
+}
+.pago-data-titulo{
+    display: inline-block;
+    margin-top: 1px;
+}
+.pago-data-sub{
+    color: #999;
+    font-size: 14px;
+    margin-top: -1px;
+}
+.pago-data-grupo-promo{
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+}
+.pago-data-section-promo{
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+}
+.pago-data-section-promo-logo{
+    display: -webkit-box;
+    display: flex;
+    padding: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    font-size: 18px;
+    white-space: nowrap;
+    height: 90px;
+
+}
+.color-a-sub{
+    color: #3483fa;
+    text-decoration: none;
+}
+.pago-data-iss{
+    margin: auto;
+}
+.pago-logo{
+    background: url(https://http2.mlstatic.com/secure/payment-logos/v2/payment-logos-mlm-large_v_4b35e216e9.png) no-repeat;
+}
+.varios-elementos{
+    width: 130px;
+    height: 24px;
+    background-position: left -673px;
+}
+.pago-data-grupo-trailing{
+    border-left-width: 1px;
+}
+.pago-data-section-trailing{
+    border-left-width: 1px;
+}
+.pago-data-icon{
+    float: left;
+    margin-right: 16px;
+    width: 48px;
+    height: 54px;
+}
