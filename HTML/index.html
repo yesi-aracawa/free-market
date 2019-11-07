@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="../CSS/descubre.css">
     <link rel="stylesheet" href="../CSS/colecciones.css">
     <link rel="stylesheet" href="../CSS/form.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('resultList', []);
+      
+        app.controller('searchController', function($scope, $http) {
+     
+        $http.get("../PHP/back.php").then(function (response) {$scope.names = response.data.records});
+         
+         });       
+    </script>
 </head>
 
 <body>
@@ -19,7 +30,7 @@
     <header class="nav-header">
         <div class="nav-bounds">
             <a href="https://www.mercadolibre.com.mx/"><img class="nav-logo"></a>
-            <form class="nav-search" action="" method="GET" role="search">
+            <form class="nav-search" action="../PHP/back.php" method="POST" role="search">
                 <input type="text" class="nav-input-search" name="ml_search" id=""
                     placeholder="Buscar productos, marcas y más..." maxlength="120" autofocus autocapitalize="off"
                     autocomplete="off" spellcheck="false" tabindex="2">
@@ -135,6 +146,24 @@
             </div>
         </div>
     </div>
+    <!--<div ng-app="resultList" ng-controller="searchController" style="background: rgb(124, 20, 20);">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                </tr>          
+            </thead>
+            <tbody>
+                <tr ng-repeat="x in names">
+                <td>{{ x.Nombre }}</td>
+                <td>S/. {{ x.Precio }}</td>
+                <td>{{ x.Stock }} unidades</td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>-->
     <section class="descubre">
         <div class="descubre-content descubre-row">
             <div class="seccion-header">Descubre</div>
@@ -178,17 +207,16 @@
             <div class="seccion-header">Completa la información de tu producto</div>
         </div>
         <div class="div-flex">
-            <!-- <form enctype="multipart/form-data" action="uploader.php" method="POST"> -->
-            <form>
+            <form enctype="multipart/form-data" method="POST" action="../PHP/back.php">
                 <div class="inside-form">
                     <div class="form-producto">
-                        <input class="form-producto-input" type="text" name="" id="" placeholder="Nombre del producto">
+                        <input class="form-producto-input" type="text" name="nombre" id="" placeholder="Nombre del producto" required>
                     </div>
                     <div class="form-producto">
-                        <input class="form-producto-input" type="text" name="" id="" placeholder="Marca">
+                        <input class="form-producto-input" type="text" name="marca" id="" placeholder="Marca" required>
                     </div>
                     <div class="form-producto">
-                        <input class="form-producto-input" type="text" name="" id="" placeholder="Modelo">
+                        <input class="form-producto-input" type="text" name="modelo" id="" placeholder="Modelo" required>
                     </div>
                     <br>
                     <div class="condicion">
@@ -197,11 +225,11 @@
                             <ul class="menu-condicion">
                                 <li class="menu-condicion-item">
                                     <div class="condicion-item">Nuevo</div>
-                                    <div class="radio-btn"><input type="radio" name="nuevo-id" id=""></div>
+                                    <div class="radio-btn"><input type="radio" name="condicion" id="" value="nuevo" required></div>
                                 </li>
                                 <li class="menu-condicion-item">
                                     <div class="condicion-item">Usado</div>
-                                    <div class="radio-btn"><input type="radio" name="usado-id" id=""></div>
+                                    <div class="radio-btn"><input type="radio" name="condicion" id="" value="usado" required></div>
                                 </li>
                             </ul>
                         </div>
@@ -213,8 +241,8 @@
                                 <li class="menu-condicion-item">
                                     <div class="foto-agregar-product">
                                         <div class="btn-foto-product">
-                                            <input class="btn-elegir-foto" name="uploadedfile" type="file"
-                                                value="Elegir foto">
+                                            <input class="btn-elegir-foto" name="foto" type="file"
+                                                value="Elegir foto" required>
                                         </div>
                                     </div>
                                 </li>
@@ -222,11 +250,11 @@
                             </ul>
                             <div class="form-producto">
                                 <input class="form-producto-input" type="number" name="cantidad" id=""
-                                    placeholder="Cantidad">
+                                    placeholder="Cantidad" required>
                             </div>
                             <div class="form-producto">
-                                <input class="form-producto-input" type="number" name="cantidad" id=""
-                                    placeholder="Precio en pesos">
+                                <input class="form-producto-input" type="number" name="precio" id=""
+                                    placeholder="Precio en pesos" required>
                             </div>
                         </div>
                     </div>
@@ -274,14 +302,31 @@
         </div>
         <div class="div-flex">
             <!-- <form enctype="multipart/form-data" action="uploader.php" method="POST"> -->
-            <form>
+            <form method="POST" action="../PHP/back.php">
                 <div class="inside-form">
                     <div class="foto-product">
                         <h3 class="title-condicion">Cambiar datos</h3>
                         <div class="values-condicion">
                             <div class="form-producto">
-                                <input class="form-producto-input" type="number" name="cantidad" id=""
+                                <input class="form-producto-input" type="number" name="cambiarCantidad" id=""
                                     placeholder="Cantidad">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn-enviar-formulario" type="submit" value="Confirmar">
+                </div>
+            </form>
+        </div>
+        <div class="div-flex">
+            <!-- <form enctype="multipart/form-data" action="uploader.php" method="POST"> -->
+            <form method="POST" action="../PHP/back.php">
+                <div class="inside-form">
+                    <div class="foto-product">
+                        <h3 class="title-condicion">Eliminar Producto</h3>
+                        <div class="values-condicion">
+                            <div class="form-producto">
+                                <input class="form-producto-input" type="text" name="eliminarProducto" id=""
+                                    placeholder="Nombre del producto">
                             </div>
                         </div>
                     </div>
