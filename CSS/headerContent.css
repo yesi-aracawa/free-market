@@ -1,7 +1,7 @@
 body{
     overflow-x: hidden;
     font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-
+    background-color: lightgrey;
 }
 .nav-header {
     display: block;
@@ -10,7 +10,7 @@ body{
     border: 0;
     position: relative;
     margin: -8px -8px auto;
-    padding: 11px 0px 0px;
+    padding: 15px 0px 0px;
     font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     color: #333;
     position: absolute;
