@@ -302,14 +302,31 @@
         </div>
         <div class="div-flex">
             <!-- <form enctype="multipart/form-data" action="uploader.php" method="POST"> -->
-            <form>
+            <form method="POST" action="../PHP/back.php">
                 <div class="inside-form">
                     <div class="foto-product">
                         <h3 class="title-condicion">Cambiar datos</h3>
                         <div class="values-condicion">
                             <div class="form-producto">
-                                <input class="form-producto-input" type="number" name="cantidad" id=""
+                                <input class="form-producto-input" type="number" name="cambiarCantidad" id=""
                                     placeholder="Cantidad">
+                            </div>
+                        </div>
+                    </div>
+                    <input class="btn-enviar-formulario" type="submit" value="Confirmar">
+                </div>
+            </form>
+        </div>
+        <div class="div-flex">
+            <!-- <form enctype="multipart/form-data" action="uploader.php" method="POST"> -->
+            <form method="POST" action="../PHP/back.php">
+                <div class="inside-form">
+                    <div class="foto-product">
+                        <h3 class="title-condicion">Eliminar Producto</h3>
+                        <div class="values-condicion">
+                            <div class="form-producto">
+                                <input class="form-producto-input" type="text" name="eliminarProducto" id=""
+                                    placeholder="Nombre del producto">
                             </div>
                         </div>
                     </div>
